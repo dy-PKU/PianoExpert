@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PianoExpert by Yu Du, Peking University. Contact-aware event-level optimization for dexterous robotic piano performance, with ten simulation videos.">
+  <meta name="theme-color" content="#ffffff">
+  <title>PianoExpert: Event-Level Optimization for Long-Horizon Dexterous Piano Performance</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="assets/hls.min.js" defer></script>
+  <script src="player.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <h1><span class="project-name">PianoExpert:</span> Event-Level Optimization for Long-Horizon<br class="title-break"> Dexterous Piano Performance</h1>
+    <p class="author">Yu Du</p>
+    <p class="affiliation">Peking University</p>
+    <p class="location">Beijing, China</p>
+    <p class="contact"><a href="mailto:duyu26@stu.pku.edu.cn">duyu26@stu.pku.edu.cn</a></p>
+  </header>
+  <main>
+    <section class="abstract-section" aria-labelledby="abstract-title">
+      <h2 id="abstract-title">Abstract</h2>
+      <p class="abstract">Dexterous robotic piano playing remains challenging due to high-frequency contacts, complex finger coordination, and long-horizon error accumulation. Although existing methods have demonstrated promising results, the accurate performance of complete virtuoso-level compositions remains largely unexplored. We propose a contact-aware event-level optimization framework for high-precision, full-length robotic piano performance. Starting from piece-specific trajectories initialized using MIDI files, human demonstration videos, and semi-automated fingering, our method combines structured residual optimization, contact-sensitivity correction, derivative-free search, and protected downstream recovery. Unlike approaches primarily evaluated on musical excerpts or less demanding repertoire, our framework achieves full-piece onset F1 scores of approximately 0.95 in simulation across challenging and specialist works from Chopin and Liszt, as well as other complete classical compositions. Our results establish robotic piano playing as a challenging benchmark for long-horizon dexterous manipulation and show that structured event-level optimization can bridge the gap between learned motion generation and expert-level robotic performance.</p>
+    </section>
+    <section class="performance-section" aria-labelledby="performance-title">
+      <h2 id="performance-title">Performance</h2>
+      <div class="performance-grid">
+        <article class="performance-item">
+          <h3 id="title-ballade">Ballade</h3>
+          <div class="video-wrap">
+            <video id="video-ballade" data-piece="ballade" controls playsinline preload="metadata" poster="assets/ballade-frame.jpg" aria-labelledby="title-ballade" tabindex="0"></video>
+            <p class="video-message" role="status" hidden>This video could not load. Please refresh and try again.</p>
+          </div>
+        </article>
+        <article class="performance-item">
+          <h3 id="title-moonlight">Moonlight III</h3>
+          <div class="video-wrap">
+            <video id="video-moonlight" data-piece="moonlight" controls playsinline preload="metadata" poster="assets/moonlight-frame.jpg" aria-labelledby="title-moonlight" tabindex="0"></video>
+            <p class="video-message" role="status" hidden>This video could not load. Please refresh and try again.</p>
+          </div>
+        </article>
+        <article class="performance-item">
+          <h3 id="title-campanella">La Campanella</h3>
+          <div class="video-wrap">
+            <video id="video-campanella" data-piece="campanella" controls playsinline preload="metadata" poster="assets/campanella-frame.jpg" aria-labelledby="title-campanella" tabindex="0"></video>
+            <p class="video-message" role="status" hidden>This video could not load. Please refresh and try again.</p>
+          </div>
+        </article>
+        <article class="performance-item">
+          <h3 id="title-fantaisie">Fantaisie</h3>
+          <div class="video-wrap">
+            <video id="video-fantaisie" data-piece="fantaisie" controls playsinline preload="metadata" poster="assets/fantaisie-frame.jpg" aria-labelledby="title-fantaisie" tabindex="0"></video>
+            <p class="video-message" role="status" hidden>This video could not load. Please refresh and try again.</p>
+          </div>
+        </article>
+        <article class="performance-item">
+          <h3 id="title-unsospiro">Un Sospiro</h3>
+          <div class="video-wrap">
+            <video id="video-unsospiro" data-piece="unsospiro" controls playsinline preload="metadata" poster="assets/unsospiro-frame.jpg" aria-labelledby="title-unsospiro" tabindex="0"></video>
+            <p class="video-message" role="status" hidden>This video could not load. Please refresh and try again.</p>
+          </div>
+        </article>
+        <article class="performance-item">
+          <h3 id="title-winter">Winter</h3>
+          <div class="video-wrap">
+            <video id="video-winter" data-piece="winter" controls playsinline preload="metadata" poster="assets/winter-frame.jpg" aria-labelledby="title-winter" tabindex="0"></video>
+            <p class="video-message" role="status" hidden>This video could not load. Please refresh and try again.</p>
+          </div>
+        </article>
+        <article class="performance-item">
+          <h3 id="title-liebestraum">Liebestraum</h3>
+          <div class="video-wrap">
+            <video id="video-liebestraum" data-piece="liebestraum" controls playsinline preload="metadata" poster="assets/liebestraum-frame.jpg" aria-labelledby="title-liebestraum" tabindex="0"></video>
+            <p class="video-message" role="status" hidden>This video could not load. Please refresh and try again.</p>
+          </div>
+        </article>
+        <article class="performance-item">
+          <h3 id="title-nocturne">Nocturne · Op. 9 No. 2</h3>
+          <div class="video-wrap">
+            <video id="video-nocturne" data-piece="nocturne" controls playsinline preload="metadata" poster="assets/nocturne-frame.jpg" aria-labelledby="title-nocturne" tabindex="0"></video>
+            <p class="video-message" role="status" hidden>This video could not load. Please refresh and try again.</p>
+          </div>
+        </article>
+        <article class="performance-item">
+          <h3 id="title-blackkey">BlackKey</h3>
+          <div class="video-wrap">
+            <video id="video-blackkey" data-piece="blackkey" controls playsinline preload="metadata" poster="assets/blackkey-frame.jpg" aria-labelledby="title-blackkey" tabindex="0"></video>
+            <p class="video-message" role="status" hidden>This video could not load. Please refresh and try again.</p>
+          </div>
+        </article>
+        <article class="performance-item">
+          <h3 id="title-etude">Etude / Tristesse <span class="excerpt">95 s excerpt</span></h3>
+          <div class="video-wrap">
+            <video id="video-etude" data-piece="etude" controls playsinline preload="metadata" poster="assets/etude-frame.jpg" aria-labelledby="title-etude" tabindex="0"></video>
+            <p class="video-message" role="status" hidden>This video could not load. Please refresh and try again.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
