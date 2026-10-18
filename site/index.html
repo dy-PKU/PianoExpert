@@ -24,6 +24,23 @@
       <h2 id="abstract-title">Abstract</h2>
       <p class="abstract">Dexterous robotic piano playing remains challenging due to high-frequency contacts, complex finger coordination, and long-horizon error accumulation. Although existing methods have demonstrated promising results, the accurate performance of complete virtuoso-level compositions remains largely unexplored. We propose a contact-aware event-level optimization framework for high-precision, full-length robotic piano performance. Starting from piece-specific trajectories initialized using MIDI files, human demonstration videos, and semi-automated fingering, our method combines structured residual optimization, contact-sensitivity correction, derivative-free search, and protected downstream recovery. Unlike approaches primarily evaluated on musical excerpts or less demanding repertoire, our framework achieves full-piece onset F1 scores of approximately 0.95 in simulation across challenging and specialist works from Chopin and Liszt, as well as other complete classical compositions. Our results establish robotic piano playing as a challenging benchmark for long-horizon dexterous manipulation and show that structured event-level optimization can bridge the gap between learned motion generation and expert-level robotic performance.</p>
     </section>
+    <section id="comparison" class="comparison-section" aria-labelledby="comparison-title">
+      <h2 id="comparison-title">Comparison</h2>
+      <div class="comparison-grid">
+        <figure class="comparison-figure">
+          <a class="comparison-image" href="assets/comparison-evaluation-horizon.png" target="_blank" rel="noopener" aria-label="Open the evaluation horizon comparison at full resolution">
+            <img src="assets/comparison-evaluation-horizon.png" width="1672" height="896" alt="Evaluation horizon comparison across RoboPianist, PianoMime, FürElise, MUSIC, and PianoExpert." loading="lazy" decoding="async">
+          </a>
+          <figcaption>Evaluation horizon</figcaption>
+        </figure>
+        <figure class="comparison-figure">
+          <a class="comparison-image" href="assets/comparison-repertoire-difficulty.png" target="_blank" rel="noopener" aria-label="Open the repertoire difficulty comparison at full resolution">
+            <img src="assets/comparison-repertoire-difficulty.png" width="1774" height="887" alt="Representative repertoire difficulty comparison across five piano-performance systems." loading="lazy" decoding="async">
+          </a>
+          <figcaption>Repertoire difficulty</figcaption>
+        </figure>
+      </div>
+    </section>
     <section class="performance-section" aria-labelledby="performance-title">
       <h2 id="performance-title">Performance</h2>
       <div class="performance-grid">

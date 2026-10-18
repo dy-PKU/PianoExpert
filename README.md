@@ -5,7 +5,7 @@
 Yu Du ? Peking University ? Beijing, China  
 [duyu26@stu.pku.edu.cn](mailto:duyu26@stu.pku.edu.cn)
 
-The project page contains the Abstract and ten simulation performances.
+The project page contains the Abstract, two comparison figures, and ten simulation performances. The comparison figures sit side by side on desktop, stack on narrow screens, and link to the unchanged full-resolution images.
 
 ## Publication
 
